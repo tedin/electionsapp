@@ -1,0 +1,23 @@
+body {
+    background-color: #eeeeee;
+}
+
+.panel {
+    padding: 3px;
+    background-color: rgba(255, 255, 255, 0.6);
+    /*
+     border-radius: 10px 10px 9px 10px;
+     -moz-border-radius: 10px 10px 9px 10px;
+     -webkit-border-radius: 10px 10px 9px 10px;
+     border: 1px solid #000000;*/
+}
+
+.sub-div {
+    text-align: center;
+    margin: 10px;
+    width: 100%;
+}
+
+.sub-btn {
+    width: auto;
+}

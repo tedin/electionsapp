@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en"
+      xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../static/css/bootstrap.css" th:href="@{/css/bootstrap.css}"/>
+    <link rel="stylesheet" href="../static/css/bootstrap-grid.css" th:href="@{/css/bootstrap-grid.css}"/>
+    <link rel="stylesheet" href="../static/css/bootstrap-reboot.css" th:href="@{/css/bootstrap-reboot.css}"/>
+    <script src="../static/js/jquery-3.2.1.min.js" th:src="@{/js/jquery-3.2.1.min.js}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+            integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+            crossorigin="anonymous" th:src="@{https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js}"></script>
+    <script src="../static/js/bootstrap.js" th:src="@{/js/bootstrap.js}"></script>
+    <style th:inline="text">
+        .container2 {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+    <title>Pocetna</title>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand navbar-text" href="#">Izbori</a>
+            </div>
+        </div>
+    </nav>
+
+</header>
+<div class="container2 container main-container">
+    <div class="text-center">
+        <img src="../static/images/grb.png" th:src="@{/images/grb.png}" height="512" width="448"><br><br>
+        <form id="login" method="get" th:action="@{/login}">
+            <div class="form-group">
+                <input type="text" name="jmbg" class="form-control" required/><br>
+                <input type="submit" class="btn-sm btn-primary sub-btn" value="LOGIN"/>
+            </div>
+        </form>
+
+    </div>
+</div>
+
+
+</body>
+<script>
+    /*
+        $('#login').submit(function (e) {
+            e.preventDefault();
+            var jmbg = {
+                "jmbg" : $("input[name = 'jmbg']").val()
+            };
+            $.ajax({
+                type: 'POST',
+                url: '/login',
+                dataType : 'json',
+                contentType : 'application/json; charset=UTF-8',
+                data : JSON.stringify(jmbg)
+
+            })
+            .done(function (status) {
+                alert("ok " + status.toString());
+                window.location(status.toString());
+            }).fail(function (status) {
+                console.log("error " + status.toString());
+            });
+        })*/
+</script>
+</html>
